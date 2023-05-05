@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 50vw;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+.box{
+    border: 3px solid black;
+    width: 160px;
+    height: 20px;
+
+}
+.box_Loving{
+    height: 100%;
+    width: 100%;
+    animation: Loving 2s infinite;
+}
+
+@keyframes Loving {
+    0%{
+        background-color: palevioletred;
+        width: 0;
+    }
+    100%{
+        background-color: darkred;
+        width: 160px;
+    }
+}
